@@ -6,10 +6,13 @@ junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.7.0"
-activityCompose = "1.7.0"
-composeBom = "2023.08.00"
+activityCompose = "1.9.0"
+composeBom = "2024.04.01"
 coil = "2.6.0"
 accompanist-pager = "0.19.0"
+jackson = "2.17.0"
+volley = "1.2.1"
+navigation = "2.7.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -29,6 +32,9 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 accompanist-pager = { group = "com.google.accompanist", name = "accompanist-pager", version.ref = "accompanist-pager"}
 accompanist-pager-indicators = { group = "com.google.accompanist", name = "accompanist-pager-indicators", version.ref = "accompanist-pager"}
+jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson"}
+volley = { group = "com.android.volley", name = "volley", version.ref = "volley"}
+navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation"}
 
 
 [plugins]

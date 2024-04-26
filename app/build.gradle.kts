@@ -63,6 +63,11 @@ dependencies {
     implementation(libs.coil)
     implementation(libs.accompanist.pager)
     implementation(libs.accompanist.pager.indicators)
+    implementation(libs.jackson.core)
+    implementation(libs.volley)
+
+    implementation(libs.navigation)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
