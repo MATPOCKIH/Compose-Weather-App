@@ -4,6 +4,10 @@ import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
 import androidx.compose.material.Text
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemColors
+import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
@@ -22,13 +26,14 @@ fun ScreenBottomNavigation(
         BottomItem.Screen3,
         BottomItem.Screen4,
     )
-    BottomNavigation(
-        backgroundColor = Color.White
+    NavigationBar(
+        containerColor = Color.White,
+        contentColor = Color.White
     ) {
         val backStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = backStackEntry?.destination?.route
         listItems.forEach { item ->
-            BottomNavigationItem(
+            NavigationBarItem (
                 selected = currentRoute == item.route,
                 onClick = {
                     navController.navigate(item.route)
@@ -45,8 +50,12 @@ fun ScreenBottomNavigation(
                         fontSize = 9.sp
                     )
                 },
-                selectedContentColor = Color.Blue,
-                unselectedContentColor = Color.Gray
+                colors = NavigationBarItemDefaults.colors(
+                    selectedIconColor = Color.Blue,
+                    selectedTextColor = Color.Yellow,
+                    unselectedIconColor = Color.Gray,
+                    unselectedTextColor = Color.Gray
+                )
             )
         }
     }
