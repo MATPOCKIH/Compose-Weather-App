@@ -67,7 +67,8 @@ dependencies {
     implementation(libs.volley)
 
     implementation(libs.navigation)
-
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.zx.scanner)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

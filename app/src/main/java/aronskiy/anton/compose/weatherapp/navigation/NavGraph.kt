@@ -18,7 +18,7 @@ fun NavGraph(navController: NavHostController, paddings: PaddingValues) {
     NavHost(
         navController = navController,
         startDestination = "screen_1",
-        modifier = Modifier.padding(paddings).padding(bottom = 56.dp)
+        modifier = Modifier/*.padding(paddings)*/
     ) {
         composable("screen_1") {
             Screen1()

@@ -13,6 +13,8 @@ accompanist-pager = "0.19.0"
 jackson = "2.17.0"
 volley = "1.2.1"
 navigation = "2.7.7"
+constraintlayoutVersion = "1.0.1"
+zxScannerVersion = "4.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +37,8 @@ accompanist-pager-indicators = { group = "com.google.accompanist", name = "accom
 jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson"}
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley"}
 navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation"}
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayoutVersion" }
+zx-scanner = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxScannerVersion" }
 
 
 [plugins]
